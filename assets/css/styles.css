@@ -1,0 +1,81 @@
+:root {
+  --font-primary: "Raleway", Helvetica, sans-serif;
+  --font-secondary: "source sans pro", Helvetica, sans-serif;
+  --background-primary: #fff;
+  --color-primary: #3b3a3a;
+  --hover-color: #2eb8ac;
+}
+
+::selection {
+  background-color: #2eb8ac;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  color: var(--hover-color) !important;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button:hover {
+  background: var(--hover-color) !important;
+  border-color: var(--hover-color) !important;
+  color: #fff !important;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  border-color: rgba(161, 161, 161, 0.6) !important;
+  color: var(--color-primary) !important;
+}
+
+#searchInput:focus {
+  border-color: var(--hover-color) !important;
+  box-shadow: none;
+}
+
+#searchBtn:focus {
+  box-shadow: none;
+}
+
+/* Navigation Menu Styles*/
+
+.navbar {
+  font-family: var(--font-primary);
+  height: 3.5rem;
+  background-color: var(--background-primary);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+/* Website Name */
+
+#title > a {
+  min-width: 16em;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  border-right: 1px solid rgba(161, 161, 161, 0.3);
+}
+
+/* Menu Items */
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  color: var(--color-primary);
+  line-height: 2.5rem;
+  /* border-left: 1px solid rgba(161, 161, 161, 0.3); */
+}
